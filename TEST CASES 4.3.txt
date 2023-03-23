@@ -1,0 +1,6 @@
+test cases                                                            output
+Original Array:26, 28, 37, 26, 33, 31, 29   Reversed Array:  29,28,37,26,33,31,29 
+Original Array:1.6, 1.8, 2.7, 1.6, 2.3, 2.1, .19   Reversed Array:0,2,2,1,2,1,1
+Original Array: 0 160 180 270 160 230 210 190 0    Reversed Array: 0 190 210 230 160 270 180 160 0     
+Original Array: 200 180 180 270 270 270 190 200    Reversed Array: 200 190 270 270 270 180 180 200 
+Original Array:100, 100, 100, 100, 100, 100, 100, 100 
