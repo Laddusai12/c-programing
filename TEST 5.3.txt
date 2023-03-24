@@ -1,0 +1,68 @@
+ #include <stdio.h>
+
+int main() {
+   int marks[4], i, total = 0;
+   float aggregate;
+   for (i = 0; i < 4; i++) {
+      printf("Enter the marks obtained in subject %d: ", i + 1);
+      scanf("%d", &marks[i]);
+      total += marks[i];
+   }
+   aggregate = (float)total / 4;
+   printf("Total marks obtained = %d\n", total);
+   printf("Aggregate marks obtained = %.2f\n", aggregate);
+   if (aggregate >= 75)
+      printf("Grade: Distinction\n");
+   else if (aggregate >= 60 && aggregate < 75)
+      printf("Grade: First Division\n");
+   else if (aggregate >= 50 && aggregate < 60)
+      printf("Grade: Second Division\n");
+   else if (aggregate >= 40 && aggregate < 50)
+      printf("Grade: Third Division\n");
+   else
+      printf("Grade: Fail\n");
+
+   return 0;
+}
+TEST CASES 4.3
+1. Enter the marks obtained in subject 1:18
+Enter the marks obtained in subject 2: 76
+Enter the marks obtained in subject 3: 93
+Enter the marks obtained in subject 4: 65
+Total marks obtained = 242
+Aggregate marks obtained = 60.50
+Grade: First Division
+
+2 .Enter the marks obtained in subject 1: 73
+Enter the marks obtained in subject 2: 78
+Enter the marks obtained in subject 3: 79
+Enter the marks obtained in subject 4: 75
+Total marks obtained = 305
+Aggregate marks obtained = 76.25
+Grade: Distinction
+
+3 .Enter the marks obtained in subject 1: 98
+Enter the marks obtained in subject 2: 106
+Enter the marks obtained in subject 3: 120
+Enter the marks obtained in subject 4: 95
+Total marks obtained = 419
+Aggregate marks obtained = 104.75
+Grade: Distinction
+
+4 .Enter the marks obtained in subject 1: 96
+Enter the marks obtained in subject 2: 73
+Enter the marks obtained in subject 3: -85
+Enter the marks obtained in subject 4: 95
+Total marks obtained = 179
+Aggregate marks obtained = 44.75
+Grade: Third Division
+
+5 .Enter the marks obtained in subject 1: 78
+Enter the marks obtained in subject 2: 76
+Enter the marks obtained in subject 3: 79
+Enter the marks obtained in subject 4: 59.8
+Total marks obtained = 292
+Aggregate marks obtained = 73.00
+Grade: First Division
+
+
